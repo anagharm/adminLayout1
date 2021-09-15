@@ -7,19 +7,20 @@ import * as CgIcons from 'react-icons/cg';
 
 export const SidebarData = [
   {
-    title: 'Stage 1',
+    title: 'User Mgmt',
+    // path: '/userlist',
     icon: <BsIcons.BsFilePlus />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
     subNav: [
       {
-        title: 'RFQ',
-        path: '/admin/rfq',
+        title: 'Register',
+        path: '/register',
         icon: <FiIcons.FiFile />
       },
       {
-        title: 'List of Org',
-        path: '/admin/commingsoon',
+        title: 'List of User',
+        path: '/userlist',
         icon: <FiIcons.FiFile />
       }
     ]

@@ -3,41 +3,85 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    min-height: 70vh;
+    padding-left: 3%;
+    padding-top: 1%;
 }
 
-.formRowDiv{
+.form2RowDiv{
     display: flex;
     flex-direction: row;
     height: 7vh;
-    padding: 1%;
+    padding-left: 10%;
+    padding-bottom: 1%;
+    padding-top: 1%;
     flex-wrap: wrap;
     flex-basis: 100%;
-    justify-content: center;
+    justify-content:flex-start;
 }
 
-.formSingleElement{
-    flex-basis: 30%;
+.form2RowDiv .formSingleElement{
+    flex-basis: 40%;
     display: flex;
     flex-direction: row;
     margin-right: 1%;
+    margin-bottom: 1%;
 }
 
-.formSingleElementLabel{
+.form2RowDiv .formSingleElementLabel{
     flex-basis: 30%;
     font-weight: bold;
     padding-top: 1%;
     margin-right: 1%;
+    /* border: 1px solid yellowgreen; */
 }
 
-.formSingleElementField{
-    flex-basis: 80%;
+.form2RowDiv .formSingleElementField{
+    flex-basis: 67%;
     height: 40px;
+    /* border: 1px solid yellowgreen; */
+}
+
+.form1RowDiv{
+    display: flex;
+    flex-direction: row;
+    height: 7vh;
+    padding-left: 10%;
+    padding-bottom: 1%;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content:flex-start;
+}
+
+.form1RowDiv .formSingleElement{
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1%;
+    
+}
+
+.form1RowDiv .formSingleElementLabel{
+    /* flex-basis: 80%; */
+    font-weight: bold;
+    margin-right: 1%;
+    height: 6vh;
+    /* border: 1px solid yellowgreen; */
+}
+
+.form1RowDiv .formSingleElementField{
+    /* flex-basis: 80%; */
+    height: 40px;
+    width: 100%;
+    /* border: 1px solid yellowgreen; */
 }
 
 .submitButtonDiv{
     border-top: 1px solid #bfdcec;
     padding-top: 2%;
     text-align: right;
-    margin-right: 3%;
+    margin-right: 4%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 1%;
 }

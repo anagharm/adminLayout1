@@ -26,15 +26,6 @@ const NavIcon = styled(Link)`
   align-items: center;
 `;
 
-const NavUser = styled.div`
-  margin-right: 2rem;
-  font-size: 1.5rem;
-  height: 40px;
-  display: flex;
-  justify-content: flex-end;
-  color: #ffffff
-`;
-
 const SidebarNav = styled.nav`
   margin: 0.5%;
   border-radius: 5px;
@@ -66,7 +57,6 @@ const Sidebar = () => {
           <NavIcon to='#'>
             <FaIcons.FaBars onClick={showSidebar} />
           </NavIcon>
-          {/* <NavUser>User Name</NavUser> */}
         </Nav>
         <SidebarNav sidebar={sidebar}>
           <SidebarWrap>

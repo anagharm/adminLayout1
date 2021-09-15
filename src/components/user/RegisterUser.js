@@ -55,22 +55,24 @@ function RegisterUser() {
                 {
                     formik =>   <Form>
                                     <div className="formOuterDiv">
-                                        <div className="formRowDiv">
+                                        <div className="form2RowDiv">
                                             <FormikControl control='input' type='text' label='First Name' name='firstName' placeholder="First Name" />
                                             <FormikControl control='input' type='text' label='Last Name' name='lastName' placeholder="Last Name" />
                                         </div>
-                                        <div className="formRowDiv">
+
+                                        <div className="form1RowDiv">
+                                            <FormikControl control='input' type='text' label='First Name' name='firstName' placeholder="First Name" />
+                                        </div>
+
+                                        <div className="form2RowDiv">
                                             <FormikControl control='input' type='text' label='First Name' name='firstName' placeholder="First Name" />
                                             <FormikControl control='input' type='text' label='Last Name' name='lastName' placeholder="Last Name" />
                                         </div>
-                                        <div className="formRowDiv">
+
+                                        <div className="form1RowDiv">
                                             <FormikControl control='input' type='text' label='First Name' name='firstName' placeholder="First Name" />
-                                            <FormikControl control='input' type='text' label='Last Name' name='lastName' placeholder="Last Name" />
                                         </div>
-                                        <div className="formRowDiv">
-                                            <FormikControl control='input' type='email' label='Email Id' name='emailId' placeholder="Email Id" />
-                                            <FormikControl control='input' type='number' label='mobNum' name='mobNum' placeholder="Mobile Number" />
-                                        </div>
+                                        
                                         <div className="submitButtonDiv">
                                             <button type="submit" className="btn btn-primary" disabled={!formik.isValid}>Submit</button>
                                         </div>

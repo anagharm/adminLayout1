@@ -11,7 +11,7 @@ const SidebarLink = styled(Link)`
   list-style: none;
   height: 60px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   &:hover {
     background: #252831;
     border-left: 4px solid #632ce4;
@@ -31,7 +31,7 @@ const DropdownLink = styled(Link)`
   align-items: center;
   text-decoration: none;
   color: #f5f5f5;
-  font-size: 18px;
+  font-size: 16px;
   &:hover {
     background: #632ce4;
     cursor: pointer;
@@ -45,7 +45,7 @@ const SubMenu = ({ item }) => {
 
   return (
     <div>
-      <SidebarLink to={item.path} onClick={item.subNav && showSubnav}>
+      <SidebarLink to={item.path || "#"} onClick={item.subNav && showSubnav}>
         <div>
           {item.icon}
           <SidebarLabel>{item.title}</SidebarLabel>
