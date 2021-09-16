@@ -72,7 +72,7 @@ function RegisterUser() {
                                         <div className="form1RowDiv">
                                             <FormikControl control='input' type='text' label='First Name' name='firstName' placeholder="First Name" />
                                         </div>
-                                        
+
                                         <div className="submitButtonDiv">
                                             <button type="submit" className="btn btn-primary" disabled={!formik.isValid}>Submit</button>
                                         </div>
